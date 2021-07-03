@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+   <listeners>
+  
+  <listener class-name="extentUtility.ExtentReport"></listener>
+  
+  </listeners>
+  
+ <!--This is a different case -->
+ 
+  <test name="Parrallel method" parallel="classes"   thread-count="2"> 
+  <classes>
+   <class name="JavaClasses.Telus_Outllok"/>
+  <class name="JavaClasses.XAP_Gmail"/>
+ 
+  </classes>
+  </test>  
+
+</suite> <!-- Suite -->
