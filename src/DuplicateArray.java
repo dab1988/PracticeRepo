@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -31,13 +32,23 @@ public class DuplicateArray {
 		
 		int k[]= {8,7,-2,-5,0,4,3,-9};
 		
-		List<Integer> list =Arrays.stream(k).boxed().collect(Collectors.toList());
+		//List<Integer> list =Arrays.stream(k).boxed().collect(Collectors.toList());
 		
-		list.stream().sorted(Comparator.naturalOrder()).forEach(System.out::print);
+		//list.stream().sorted(Comparator.naturalOrder()).forEach(System.out::print);
 		
+		ArrayList<Integer> list= new ArrayList<Integer>();
+		
+		for(int i=0; i<k.length; i++)
+		{
+		
+			if(k[i]<0)
+			{
+			list.add(k[i]);
+			}
+			
+		}
+		
+		System.out.println(list);
 	}
 
-	
-	
-	
 }
