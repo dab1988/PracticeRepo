@@ -1,20 +1,33 @@
 package Interface_Practice;
 
-public class workingCalculator implements Calculator
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+import java_classed.Student;
+
+public class workingCalculator extends Student implements Calculator
 {
 	
+	workingCalculator(int age, String name) {
+		super(16, "kk");
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public static void main(String[] args)
 	{
 		// TODO Auto-generated method stub
-		Calculator cal= new workingCalculator();
-		Calculator1 cal1= new workingCalculator();
+		//Calculator cal= new workingCalculator(16, "kk");
+		//Calculator1 cal1= new workingCalculator(age, name);
 		//cal.a
-		System.out.println(cal.show(10, 8));
-		cal.fibonacci();
+		//System.out.println(cal.show(10, 8));
+		//cal.fibonacci();
 		//cal1.
-		cal.removeDuplicate();
-		workingCalculator work= new workingCalculator();
-		int a=work.sum;
+		//cal.removeDuplicate();
+		//workingCalculator work= new workingCalculator(age, name);
+		//int a=work.sum;
 			
 	}
 
@@ -90,6 +103,27 @@ public class workingCalculator implements Calculator
 		
 		int j=0;
 		int k=0;
+		
+		Set <Integer> set= new TreeSet<Integer>();
+		
+		for(int x: a)
+		{
+			if(set.add(x)==false)
+			{
+				a[k++]=x;
+			}
+			
+			
+			else
+			{
+				set.add(x);
+			}
+		}
+		
+		set.stream().forEach(System.out::println);
+		
+		
+		System.out.println("Using For Loop");
 		
 		for(int i=0; i<a.length-1; i++)
 		{

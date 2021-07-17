@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.FullPageScreenShot">
+      <class name="TestNG.JavaScriptExecutor">
         <methods>
-          <include name="hdfc"/>
+          <include name="Treemap"/>
         </methods>
-      </class> <!-- TestNG.FullPageScreenShot -->
+      </class> <!-- TestNG.JavaScriptExecutor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

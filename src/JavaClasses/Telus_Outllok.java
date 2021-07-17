@@ -29,7 +29,7 @@ public class Telus_Outllok  extends WebDriverClass
 	{
 		//WebDriverClass.initializaion().get(url);
 		driver.findElement(By.id("username")).sendKeys("x212631");
-		driver.findElement(By.id("password")).sendKeys("Telus@1999");
+		driver.findElement(By.id("password")).sendKeys("Telus@2000");
 		driver.findElement(By.className("signinTxt")).click();
 	}
 	
