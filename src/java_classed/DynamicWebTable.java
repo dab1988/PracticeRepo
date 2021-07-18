@@ -55,7 +55,7 @@ public class DynamicWebTable {
 		 * "//body/div[1]/div[2]/div[4]/div[2]/div[2]/div[1]/div["+i+"]/div["+j+"]")).
 		 * getText()+" "); } System.out.println(); }
 		 */
-	 //
+	 
 	}
 
 }
